@@ -830,7 +830,7 @@ function Library:_ToggleMinimize()
         end
         CreateTween(self.container, {Size = UDim2.new(0, self.container.AbsoluteSize.X, 0, self._originalHeight)}, animationspeed.Slow)
         task.delay(0.1, function()
-            CreateTween(self.mainContent, {Size = UDim2.new(6, 6, 6, -46)}, animationspeed.Normal)
+            CreateTween(self.mainContent, {Size = UDim2.new(1, 0, 1, -46)}, animationspeed.Normal)
         end)
         if self.resizeBtn then
             self.resizeBtn.Visible = true
