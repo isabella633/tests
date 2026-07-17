@@ -820,7 +820,7 @@ function Library:_ToggleMinimize()
             self._ProdigyBlur:SetEnabled(false)
         end
         CreateTween(self.mainContent, {Size = UDim2.new(1, 0, 0, 0)}, animationspeed.Slow)
-        CreateTween(self.container, {Size = UDim2.new(0, self.container.AbsoluteSize.X, 0, 45)}, animationspeed.Slow)
+        CreateTween(self.container, {Size = UDim2.new(0, self.container.AbsoluteSize.X, 0, 55)}, animationspeed.Slow)
         if self.resizeBtn then
             self.resizeBtn.Visible = false
         end
@@ -830,7 +830,7 @@ function Library:_ToggleMinimize()
         end
         CreateTween(self.container, {Size = UDim2.new(0, self.container.AbsoluteSize.X, 0, self._originalHeight)}, animationspeed.Slow)
         task.delay(0.1, function()
-            CreateTween(self.mainContent, {Size = UDim2.new(1, 0, 1, -50)}, animationspeed.Normal)
+            CreateTween(self.mainContent, {Size = UDim2.new(1, 0, 1, -46)}, animationspeed.Normal)
         end)
         if self.resizeBtn then
             self.resizeBtn.Visible = true
