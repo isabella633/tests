@@ -30,7 +30,7 @@ local c = {
 
 local s = {
     v0rtexd = {Width = 690, Height = 446},
-    Minv0rtexd = {Width = 500, Height = 300},
+    Minv0rtexd = {Width = 500, Height = 100},
     Maxv0rtexd = {Width = 1200, Height = 800},
     Toggle = {Width = 38, Height = 21, Circle = 13},
     Button = {Height = 39},
